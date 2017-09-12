@@ -9,7 +9,7 @@ var articleOne = {
     title : 'Article - One | Prabhu',
     heading : 'Article - One',
     date : 'Sep 12, 2017',
-    content : ''
+    content : '
               <br/>
               <br/>
               <b>About Hasura</b>
