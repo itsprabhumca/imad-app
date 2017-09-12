@@ -13,7 +13,7 @@ var articleOne = {
               <br/>
               <br/>
               <b>About Hasura</b>
-              <p align='justify'>
+              <p>
                 Hasura is a batteries included platform for building and deploying powerful backends. Instant APIs for data, auth & file handling (powered by Postgres). Hasura helps you deploy your custom code written in any language/framework. Runs anywhere: your laptop, your VM, your cluster on the cloud.
               </p>"
 };
