@@ -9,13 +9,13 @@ var articleOne = {
     title : 'Article - One | Prabhu',
     heading : 'Article - One',
     date : 'Sep 12, 2017',
-    content : "
+    content : ''
               <br/>
               <br/>
               <b>About Hasura</b>
               <p align='justify'>
                 Hasura is a batteries included platform for building and deploying powerful backends. Instant APIs for data, auth & file handling (powered by Postgres). Hasura helps you deploy your custom code written in any language/framework. Runs anywhere: your laptop, your VM, your cluster on the cloud.
-              </p>"
+              </p>'
 };
 
 function createTemplate(Data) {
