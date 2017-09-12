@@ -2,22 +2,26 @@
   <head>
       <title> Article Two | Prabhu</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="/ui/style.css" rel="stylesheet" />
   </head>
   <body>
-      <a href="/"><h5>Goto Home</h5></a>
-      <hr>
-      <div>
-          <h3>Article-Two</h3>
-          
+      <div class='container'>
+          <a href="/"><h5>Goto Home</h5></a>
+          <hr>
+          <div>
+              <h3>Article-Two</h3>
+              
+          </div>
+          <br/>
+          <div>
+            <b>Today : </b> <script> document.write(new Date().toLocaleDateString()); </script>
+          </div>
+          <br/>
+          <br/>
+          <b>About Hasura</b>
+          <p align='justify'>
+            Hasura is a batteries included platform for building and deploying powerful backends. Instant APIs for data, auth & file handling (powered by Postgres). Hasura helps you deploy your custom code written in any language/framework. Runs anywhere: your laptop, your VM, your cluster on the cloud.
+          </p>
       </div>
-      <br/>
-      <div>
-        <b>Today : </b> <script> document.write(new Date().toLocaleDateString()); </script>
-      </div>
-      <br/>
-      <br/>
-      <p>
-        Hasura is a batteries included platform for building and deploying powerful backends. Instant APIs for data, auth & file handling (powered by Postgres). Hasura helps you deploy your custom code written in any language/framework. Runs anywhere: your laptop, your VM, your cluster on the cloud.
-      </p>
   </body>
 </html>
