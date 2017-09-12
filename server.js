@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articleOne = {
     title : 'Article - One | Prabhu',
     heading : 'Article - One',
-    date : 'Sep 12, 2017'
+    date : 'Sep 12, 2017',
     content : "
               <br/>
               <br/>
@@ -24,7 +24,7 @@ function createTemplate(Data) {
     var header = Data.header;
     var content = Data.content;
     
-    var htmlTemplate = '
+    var htmlTemplate = "
           <html>
           <head>
               <title> $(title);</title>
@@ -49,7 +49,7 @@ function createTemplate(Data) {
               </div>
           </body>
         </html>  
-    ';
+    ";
     
     return htmlTemplate;
 }
@@ -59,7 +59,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-   res.sendFile(articleOne);
+   res.sendFile(createTemplate(articleOne));
 });
 
 app.get('/article-two',function(req,res){
