@@ -21,11 +21,11 @@ button.onclick = function() {
 
 var txtList = document.getElementById('txtList');
 var btnAdd = document.getElementById('btnAdd');
-var dispList = '';
+
 btnAdd.onclick = function() {
     
     var arrList = ['name1','name2','name3'];
-    
+    var dispList = '';
     for(var i=0;i<arrList.lenght;i++)
     {
         dispList += "<li>" + arrList[i] + "</li>"; 
