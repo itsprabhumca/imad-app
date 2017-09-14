@@ -21,7 +21,7 @@ button.onclick = function() {
 
 var txtList = document.getElementById('txtList');
 var btnAdd = document.getElementById('btnAdd');
-var dispList = null;
+var dispList = '';
 btnAdd.onclick = function() {
     
     var arrList = ['name1','name2','name3'];
