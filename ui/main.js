@@ -26,7 +26,7 @@ btnAdd.onclick = function() {
     
     var arrList = ['name1','name2','name3'];
     var dispList = '';
-    for(var i=0;i<arrList.lenght;i++)
+    for(var i=0;i<arrList.length;i++)
     {
         dispList += "<li>" + arrList[i] + "</li>"; 
     }
