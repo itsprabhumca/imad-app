@@ -30,5 +30,7 @@ btnAdd.onclick = function() {
     {
         dispList += "<li>" + arrList[i] + "</li>"; 
     }
-    document.getElementById('list').innerHTML = dispList;
+    
+    var l = document.getElementById('list');
+    l.innerHTML = dispList;
 };
