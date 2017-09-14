@@ -18,3 +18,17 @@ button.onclick = function() {
     request.open('GET','http://itsprabhumca.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+
+var txtList = document.getElementById('txtList');
+var btnAdd = document.getElementById('btnAdd');
+var dispList = null;
+btnAdd.onclick = function() {
+    
+    var arrList = ['name1','name2','name3'];
+    
+    for(var i=0;i<arrList.lenght;i++)
+    {
+        dispList += "<li>" + arrList[i] + "</li>"; 
+    }
+    document.getElementById('list').innerHTML = dispList;
+};
