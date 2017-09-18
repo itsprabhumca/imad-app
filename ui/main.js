@@ -1,6 +1,6 @@
 console.log('Loaded!');
 // Counter Code
-var button = document.getElementById('btnCounter');
+var button = document.getElementById('btnAdd');
 var txtList = document.getElementById('txtList');
 button.onclick = function() {
     // Make a request to Counter EndPoint
