@@ -1,6 +1,7 @@
 console.log('Loaded!');
 // Counter Code
 var button = document.getElementById('btnCounter');
+var txtList = document.getElementById('txtList');
 button.onclick = function() {
     // Make a request to Counter EndPoint
     var request = new XMLHttpRequest();
@@ -8,29 +9,20 @@ button.onclick = function() {
     request.onreadystatechange = function() {
         if(request.readyState == XMLHttpRequest.DONE) {
             if(request.status == 200) {
-                var cnt = request.responseText;
-                var count = document.getElementById('count');
-                count.innerHTML = cnt;
+                var arrList = request.responseText;
+                arrList = JSON.parse(arrList);         
+                var dispList = '';
+                for(var i=0;i<arrList.length;i++)
+                {
+                    dispList += "<li>" + arrList[i] + "</li>"; 
+                }
+                
+                var l = document.getElementById('list');
+                l.innerHTML = dispList;
             }
         }
     };
 
-    request.open('GET','http://itsprabhumca.imad.hasura-app.io/counter',true);
+    request.open('GET','http://itsprabhumca.imad.hasura-app.io/submit-name?name=' + txtList,true);
     request.send(null);
-};
-
-var txtList = document.getElementById('txtList');
-var btnAdd = document.getElementById('btnAdd');
-
-btnAdd.onclick = function() {
-    
-    var arrList = ['name1','name2','name3'];
-    var dispList = '';
-    for(var i=0;i<arrList.length;i++)
-    {
-        dispList += "<li>" + arrList[i] + "</li>"; 
-    }
-    
-    var l = document.getElementById('list');
-    l.innerHTML = dispList;
 };
