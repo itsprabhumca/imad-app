@@ -1,7 +1,7 @@
 console.log('Loaded!');
 // Counter Code
 var button = document.getElementById('btnAdd');
-var txtList = document.getElementById('txtList');
+var txtList = document.getElementById('txtList').value;
 button.onclick = function() {
     // Make a request to Counter EndPoint
     var request = new XMLHttpRequest();
@@ -23,6 +23,6 @@ button.onclick = function() {
         }
     };
 
-    request.open('GET','http://itsprabhumca.imad.hasura-app.io/submit-name?name=' + txtList.value,true);
+    request.open('GET','http://itsprabhumca.imad.hasura-app.io/submit-name?name=' + txtList,true);
     request.send(null);
 };
