@@ -1,11 +1,11 @@
 console.log('Loaded!');
 // Counter Code
 var button = document.getElementById('btnAdd');
-var txtList = document.getElementById('txtList').value;
+var txtList = '';
 button.onclick = function() {
     // Make a request to Counter EndPoint
     var request = new XMLHttpRequest();
-
+    txtList = document.getElementById('txtList').value;
     request.onreadystatechange = function() {
         if(request.readyState == XMLHttpRequest.DONE) {
             if(request.status == 200) {
