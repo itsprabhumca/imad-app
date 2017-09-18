@@ -23,6 +23,6 @@ button.onclick = function() {
         }
     };
 
-    request.open('GET','http://itsprabhumca.imad.hasura-app.io/submit-name?name=' + txtList,true);
+    request.open('GET','http://itsprabhumca.imad.hasura-app.io/submit-name?name=' + txtList.val(),true);
     request.send(null);
 };
